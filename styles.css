@@ -818,7 +818,7 @@ body {
   font-family: inherit;
 }
 
-[dir="ltr"] .faq-question {
+[dir="rtl"] .faq-question {
   text-align: left;
 }
 
