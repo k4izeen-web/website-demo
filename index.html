@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ssDATA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z" fill="currentColor"/>
+                    </svg>
+                    <span class="logo-text">ssDATA</span>
+                </div>
+                
+                <nav class="nav-desktop">
+                    <a href="#home" class="nav-link" data-en="Home" data-ar="الرئيسية">الرئيسية</a>
+                    <a href="#why-choose" class="nav-link" data-en="Why Choose Us" data-ar="لماذا نحن">لماذا نحن</a>
+                    <a href="#products" class="nav-link" data-en="Products" data-ar="المنتجات">المنتجات</a>
+                    <!-- Added FAQ link to navigation -->
+                    <a href="#faq" class="nav-link" data-en="FAQ" data-ar="الأسئلة الشائعة">الأسئلة الشائعة</a>
+                    <a href="#contact" class="nav-link" data-en="Contact" data-ar="تواصل معنا">تواصل معنا</a>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="icon-btn" id="langToggle" aria-label="Toggle Language">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </button>
+                    <button class="icon-btn" id="themeToggle" aria-label="Toggle Theme">
+                        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"/>
+                            <line x1="12" y1="1" x2="12" y2="3"/>
+                            <line x1="12" y1="21" x2="12" y2="23"/>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                            <line x1="1" y1="12" x2="3" y2="12"/>
+                            <line x1="21" y1="12" x2="23" y2="12"/>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        </svg>
+                        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        </svg>
+                    </button>
+                    <button class="menu-btn" id="menuToggle" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+            <a href="#home" class="mobile-nav-link" data-en="Home" data-ar="الرئيسية">الرئيسية</a>
+            <a href="#why-choose" class="mobile-nav-link" data-en="Why Choose Us" data-ar="لماذا نحن">لماذا نحن</a>
+            <a href="#products" class="mobile-nav-link" data-en="Products" data-ar="المنتجات">المنتجات</a>
+            <!-- Added FAQ link to mobile navigation -->
+            <a href="#faq" class="mobile-nav-link" data-en="FAQ" data-ar="الأسئلة الشائعة">الأسئلة الشائعة</a>
+            <a href="#contact" class="mobile-nav-link" data-en="Contact" data-ar="تواصل معنا">تواصل معنا</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="hero-title-line" data-en="Take Control of" data-ar="تحكم في">تحكم في</span>
+                    <span class="hero-title-line" data-en="Your Tech Needs" data-ar="احتياجاتك التقنية">احتياجاتك التقنية</span>
+                </h1>
+                <p class="hero-description" data-en="ssDATA offers premium quality RAM, SSDs, and used laptops. Fast delivery, competitive prices, and expert support." data-ar="ssDATA تقدم رامات وأقراص SSD ولابتوبات مستعملة بجودة عالية. توصيل سريع، أسعار تنافسية، ودعم متخصص.">
+                    ssDATA تقدم رامات وأقراص SSD ولابتوبات مستعملة بجودة عالية.
+                    <br>توصيل سريع، أسعار تنافسية، ودعم متخصص.
+                </p>
+                <button class="cta-button">
+                    <span data-en="Get started now" data-ar="ابدأ الآن">ابدأ الآن</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Preview Section -->
+    <section class="dashboard-preview">
+        <div class="container">
+            <div class="dashboard-mockup">
+                <!-- Fixed image effects structure with proper layering 
+		<div class="image-shine-line"></div>
+                <div class="image-glow-top"></div>-->
+
+                <img src="https://i.ibb.co/0j2Dg3Hj/tb.png" alt="ssDATA Products - Laptop, RAM, SSD" class="dashboard-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Added section divider -->
+    <div class="section-divider"></div>
+
+    <!-- Value Proposition -->
+    <section class="value-prop">
+        <div class="container">
+            <div class="value-prop-content">
+                <h2 class="section-title" data-en="Simplicity, performance, and reliability, empowering you to upgrade your tech with confidence and agility." data-ar="البساطة والأداء والموثوقية، نمكنك من ترقية تقنيتك بثقة ومرونة.">
+                    البساطة والأداء والموثوقية،
+                    <br>نمكنك من ترقية تقنيتك
+                    <br>بثقة ومرونة.
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Added section divider -->
+    <div class="section-divider"></div>
+
+    <!-- Why Choose Section -->
+    <section class="why-choose" id="why-choose">
+        <div class="container">
+            <h2 class="section-heading" data-en="Why Choose ssDATA?" data-ar="لماذا تختار ssDATA؟">لماذا تختار ssDATA؟</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title" data-en="Premium Quality" data-ar="جودة عالية">جودة عالية</h3>
+                    <p class="feature-description" data-en="All products are tested and verified for optimal performance and reliability." data-ar="جميع المنتجات مختبرة ومعتمدة للحصول على أفضل أداء وموثوقية.">جميع المنتجات مختبرة ومعتمدة للحصول على أفضل أداء وموثوقية.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                            <line x1="1" y1="10" x2="23" y2="10"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title" data-en="Competitive Prices" data-ar="أسعار تنافسية">أسعار تنافسية</h3>
+                    <p class="feature-description" data-en="Best market prices with flexible payment options and special deals." data-ar="أفضل أسعار السوق مع خيارات دفع مرنة وعروض خاصة.">أفضل أسعار السوق مع خيارات دفع مرنة وعروض خاصة.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title" data-en="Fast Delivery" data-ar="توصيل سريع">توصيل سريع</h3>
+                    <p class="feature-description" data-en="Quick shipping and delivery to get your tech upgrades as soon as possible." data-ar="شحن وتوصيل سريع للحصول على ترقياتك التقنية في أسرع وقت ممكن.">شحن وتوصيل سريع للحصول على ترقياتك التقنية في أسرع وقت ممكن.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title" data-en="Warranty & Support" data-ar="ضمان ودعم">ضمان ودعم</h3>
+                    <p class="feature-description" data-en="Comprehensive warranty coverage and dedicated customer support team." data-ar="تغطية ضمان شاملة وفريق دعم عملاء متخصص.">تغطية ضمان شاملة وفريق دعم عملاء متخصص.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Added section divider -->
+    <div class="section-divider"></div>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-heading" data-en="Our Products" data-ar="منتجاتنا">منتجاتنا</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                            <path d="M16 3v4M8 3v4M2 11h20"/>
+                        </svg>
+                    </div>
+                    <h3 class="product-title" data-en="RAM Modules" data-ar="ذاكرة RAM">ذاكرة RAM</h3>
+                    <p class="product-description" data-en="High-performance DDR4 and DDR5 RAM modules from leading brands. Boost your system's speed and multitasking capabilities." data-ar="وحدات ذاكرة DDR4 و DDR5 عالية الأداء من العلامات التجارية الرائدة. عزز سرعة نظامك وقدرات تعدد المهام.">وحدات ذاكرة DDR4 و DDR5 عالية الأداء من العلامات التجارية الرائدة. عزز سرعة نظامك وقدرات تعدد المهام.</p>
+                    <ul class="product-features">
+                        <li data-en="DDR4 & DDR5 options" data-ar="خيارات DDR4 و DDR5">خيارات DDR4 و DDR5</li>
+                        <li data-en="8GB to 64GB capacity" data-ar="سعة من 8 جيجا إلى 64 جيجا">سعة من 8 جيجا إلى 64 جيجا</li>
+                        <li data-en="All major brands" data-ar="جميع العلامات التجارية الرئيسية">جميع العلامات التجارية الرئيسية</li>
+                        <li data-en="Tested & verified" data-ar="مختبرة ومعتمدة">مختبرة ومعتمدة</li>
+                    </ul>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <path d="M21 15l-5-5L5 21"/>
+                        </svg>
+                    </div>
+                    <h3 class="product-title" data-en="SSD Drives" data-ar="أقراص SSD">أقراص SSD</h3>
+                    <p class="product-description" data-en="Lightning-fast SATA and NVMe SSDs for superior storage performance. Upgrade your storage with reliable solid-state drives." data-ar="أقراص SATA و NVMe فائقة السرعة لأداء تخزين متفوق. قم بترقية التخزين الخاص بك بأقراص الحالة الصلبة الموثوقة.">أقراص SATA و NVMe فائقة السرعة لأداء تخزين متفوق. قم بترقية التخزين الخاص بك بأقراص الحالة الصلبة الموثوقة.</p>
+                    <ul class="product-features">
+                        <li data-en="SATA & NVMe options" data-ar="خيارات SATA و NVMe">خيارات SATA و NVMe</li>
+                        <li data-en="256GB to 4TB capacity" data-ar="سعة من 256 جيجا إلى 4 تيرا">سعة من 256 جيجا إلى 4 تيرا</li>
+                        <li data-en="High-speed performance" data-ar="أداء عالي السرعة">أداء عالي السرعة</li>
+                        <li data-en="Long-term reliability" data-ar="موثوقية طويلة الأمد">موثوقية طويلة الأمد</li>
+                    </ul>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3 class="product-title" data-en="Used Laptops" data-ar="لابتوبات مستعملة">لابتوبات مستعملة</h3>
+                    <p class="product-description" data-en="Quality pre-owned laptops from premium brands. Thoroughly inspected and refurbished for optimal performance." data-ar="لابتوبات مستعملة عالية الجودة من علامات تجارية مميزة. تم فحصها وتجديدها بالكامل للحصول على أداء مثالي.">لابتوبات مستعملة عالية الجودة من علامات تجارية مميزة. تم فحصها وتجديدها بالكامل للحصول على أداء مثالي.</p>
+                    <ul class="product-features">
+                        <li data-en="Premium brands only" data-ar="علامات تجارية مميزة فقط">علامات تجارية مميزة فقط</li>
+                        <li data-en="Fully tested & cleaned" data-ar="مختبرة ونظيفة بالكامل">مختبرة ونظيفة بالكامل</li>
+                        <li data-en="Warranty included" data-ar="يشمل الضمان">يشمل الضمان</li>
+                        <li data-en="Great value deals" data-ar="صفقات ذات قيمة رائعة">صفقات ذات قيمة رائعة</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Added section divider -->
+    <div class="section-divider"></div>
+
+    <!-- Added FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2 class="section-heading" data-en="Your Questions, Answered" data-ar="أسئلتك، مُجابة">أسئلتك، مُجابة</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-en="What types of RAM do you offer?" data-ar="ما أنواع الرامات التي تقدمونها؟">ما أنواع الرامات التي تقدمونها؟</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-en="We offer both DDR4 and DDR5 RAM modules from leading brands like Corsair, Kingston, and G.Skill. Capacities range from 8GB to 64GB, suitable for gaming, professional work, and everyday computing." data-ar="نقدم وحدات ذاكرة DDR4 و DDR5 من علامات تجارية رائدة مثل Corsair و Kingston و G.Skill. تتراوح السعات من 8 جيجا إلى 64 جيجا، مناسبة للألعاب والعمل الاحترافي والحوسبة اليومية.">نقدم وحدات ذاكرة DDR4 و DDR5 من علامات تجارية رائدة مثل Corsair و Kingston و G.Skill. تتراوح السعات من 8 جيجا إلى 64 جيجا، مناسبة للألعاب والعمل الاحترافي والحوسبة اليومية.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-en="Are your used laptops tested?" data-ar="هل اللابتوبات المستعملة مختبرة؟">هل اللابتوبات المستعملة مختبرة؟</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-en="Yes, all our used laptops undergo comprehensive testing including hardware diagnostics, battery health checks, and performance benchmarks. We also clean and refurbish them to ensure they meet our quality standards." data-ar="نعم، جميع اللابتوبات المستعملة لدينا تخضع لاختبارات شاملة تشمل تشخيص الأجهزة وفحص صحة البطارية ومعايير الأداء. كما نقوم بتنظيفها وتجديدها لضمان استيفائها لمعايير الجودة لدينا.">نعم، جميع اللابتوبات المستعملة لدينا تخضع لاختبارات شاملة تشمل تشخيص الأجهزة وفحص صحة البطارية ومعايير الأداء. كما نقوم بتنظيفها وتجديدها لضمان استيفائها لمعايير الجودة لدينا.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-en="What is your warranty policy?" data-ar="ما هي سياسة الضمان لديكم؟">ما هي سياسة الضمان لديكم؟</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-en="We provide a 6-month warranty on all RAM and SSD products, and a 3-month warranty on used laptops. Our warranty covers manufacturing defects and hardware failures under normal use conditions." data-ar="نقدم ضمانًا لمدة 6 أشهر على جميع منتجات الرامات وأقراص SSD، وضمانًا لمدة 3 أشهر على اللابتوبات المستعملة. يغطي ضماننا عيوب التصنيع وأعطال الأجهزة في ظل ظروف الاستخدام العادية.">نقدم ضمانًا لمدة 6 أشهر على جميع منتجات الرامات وأقراص SSD، وضمانًا لمدة 3 أشهر على اللابتوبات المستعملة. يغطي ضماننا عيوب التصنيع وأعطال الأجهزة في ظل ظروف الاستخدام العادية.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-en="How fast is your delivery?" data-ar="ما مدى سرعة التوصيل؟">ما مدى سرعة التوصيل؟</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-en="We offer same-day delivery within the city and 2-3 business days for nationwide shipping. Express delivery options are also available for urgent orders." data-ar="نقدم التوصيل في نفس اليوم داخل المدينة و 2-3 أيام عمل للشحن على مستوى البلاد. تتوفر أيضًا خيارات التوصيل السريع للطلبات العاجلة.">نقدم التوصيل في نفس اليوم داخل المدينة و 2-3 أيام عمل للشحن على مستوى البلاد. تتوفر أيضًا خيارات التوصيل السريع للطلبات العاجلة.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-en="Do you offer installation services?" data-ar="هل تقدمون خدمات التركيب؟">هل تقدمون خدمات التركيب؟</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-en="Yes, we provide professional installation services for RAM and SSD upgrades. Our technicians can install your new components and ensure everything is working properly." data-ar="نعم، نقدم خدمات تركيب احترافية لترقيات الرامات وأقراص SSD. يمكن لفنيينا تثبيت مكوناتك الجديدة والتأكد من أن كل شيء يعمل بشكل صحيح.">نعم، نقدم خدمات تركيب احترافية لترقيات الرامات وأقراص SSD. يمكن لفنيينا تثبيت مكوناتك الجديدة والتأكد من أن كل شيء يعمل بشكل صحيح.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-en="What payment methods do you accept?" data-ar="ما طرق الدفع التي تقبلونها؟">ما طرق الدفع التي تقبلونها؟</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-en="We accept cash on delivery, bank transfers, credit/debit cards, and popular digital payment methods. Installment plans are also available for purchases above a certain amount." data-ar="نقبل الدفع عند الاستلام والتحويلات البنكية وبطاقات الائتمان/الخصم وطرق الدفع الرقمية الشائعة. تتوفر أيضًا خطط التقسيط للمشتريات التي تزيد عن مبلغ معين.">نقبل الدفع عند الاستلام والتحويلات البنكية وبطاقات الائتمان/الخصم وطرق الدفع الرقمية الشائعة. تتوفر أيضًا خطط التقسيط للمشتريات التي تزيد عن مبلغ معين.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Added section divider -->
+    <div class="section-divider"></div>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <!-- Added center glow effect -->
+        <div class="cta-glow"></div>
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title" data-en="Ready to upgrade your tech?" data-ar="جاهز لترقية تقنيتك؟">جاهز لترقية تقنيتك؟</h2>
+                <p class="cta-description" data-en="Contact us today and discover the best deals on RAM, SSDs, and laptops." data-ar="تواصل معنا اليوم واكتشف أفضل العروض على الرامات وأقراص SSD واللابتوبات.">تواصل معنا اليوم واكتشف أفضل العروض على الرامات وأقراص SSD واللابتوبات.</p>
+                <a href="https://wa.me/0560929009"
+		   target="_blank"
+		   rel="noopener noreferrer"
+		   class="cta-button cta-button-large">
+		  <span data-en="Contact us now" data-ar="تواصل معنا الآن">تواصل معنا الآن</span>
+		  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+		       stroke="currentColor" stroke-width="2">
+		    <path d="M5 12h14M12 5l7 7-7 7"/>
+		  </svg>
+		</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z" fill="currentColor"/>
+                        </svg>
+                        <span class="logo-text">ssDATA</span>
+                    </div>
+                    <p class="footer-tagline" data-en="Your trusted source for premium tech components and laptops." data-ar="مصدرك الموثوق للمكونات التقنية المميزة واللابتوبات.">مصدرك الموثوق للمكونات التقنية المميزة واللابتوبات.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-heading" data-en="Products" data-ar="المنتجات">المنتجات</h4>
+                        <a href="#" class="footer-link" data-en="RAM Modules" data-ar="ذاكرة RAM">ذاكرة RAM</a>
+                        <a href="#" class="footer-link" data-en="SSD Drives" data-ar="أقراص SSD">أقراص SSD</a>
+                        <a href="#" class="footer-link" data-en="Used Laptops" data-ar="لابتوبات مستعملة">لابتوبات مستعملة</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading" data-en="Company" data-ar="الشركة">الشركة</h4>
+                        <a href="#" class="footer-link" data-en="About Us" data-ar="من نحن">من نحن</a>
+                        <a href="https://wa.me/0560929009" class="footer-link" data-en="Contact" data-ar="تواصل معنا">تواصل معنا</a>
+                        <a href="#" class="footer-link" data-en="Support" data-ar="الدعم">الدعم</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright" data-en="© 2025 ssDATA. All rights reserved." data-ar="© 2025 ssDATA. جميع الحقوق محفوظة.">© 2025 ssDATA. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/0560929009" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
