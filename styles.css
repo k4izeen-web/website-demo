@@ -761,7 +761,7 @@ body {
 
 
 
-[dir="rtl"] .whatsapp-btn {
+[dir="ltr"] .whatsapp-btn {
   right: auto;
   left: 24px;
 }
